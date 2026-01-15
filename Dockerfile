@@ -2,7 +2,8 @@ FROM node:22
 
 WORKDIR /src
 
-COPY . .
+COPY ./sources .
+RUN ls -alh ./
 
 RUN npm install --verbose
 
